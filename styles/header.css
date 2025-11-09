@@ -1,0 +1,68 @@
+.header-container{
+    background-color: rgb(240, 234, 221);
+    padding: 20px;
+    border-bottom: 2px solid rgb(190, 179, 161);
+}
+
+.presentation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.photo{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.presentation h1{
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.knowledge {
+  display: flex;
+  flex-wrap: wrap;         
+  justify-content: center;
+  gap: 15px;               
+  margin-top: 20px;
+}
+
+.knowledge h3 {
+  margin: 0;        
+  background-color: rgb(141, 123, 94);
+  padding: 10px 15px;
+  border-radius: 50px;     
+}
+
+.knowledge h3:hover {
+  background-color: rgb(161, 150, 132);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.works-btn{
+    margin-top: 30px;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    color: white;
+    background-color: rgb(161, 150, 132);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    display: block;
+    margin: 30px auto 0 auto;
+   
+}
+
+.works-btn:hover{
+    background-color: rgb(190, 179, 161);
+    transition: background-color 0.3s ease;
+}

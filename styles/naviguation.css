@@ -1,0 +1,45 @@
+.naviguation {
+    display: flex;
+    justify-content: space-between; 
+    padding: 10px;
+    position: sticky;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+}
+
+.naviguation h1{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    color: #665555;
+    margin: 0;
+}
+
+.nav-icon {
+    margin-left: auto;
+    color: #000;
+    text-decoration: none;
+}
+
+.nav-links{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 40px; 
+    right: 0;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #797777;
+  padding: 8px 0;
+}
+
+.nav-links a:hover {
+    color: #6a616b;
+    font-weight: bold;
+}
