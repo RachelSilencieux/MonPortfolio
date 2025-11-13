@@ -1,8 +1,2 @@
-@import "../styles/header.css";
-@import "../styles/footer.css";
-@import "../styles/projects.css";
-@import "../styles/about.css";
-@import "../styles/popup.css";
-@import "../styles/naviguation.css";
-@import "../styles/notFound.css"
+@import "tailwindcss";
 

@@ -1,41 +1,44 @@
 "use client";
 
-import "../styles/header.css";
+import { useRouter } from "next/navigation";
 import ThemeButton from "../components/ThemeButton";
 import { useTheme } from "../context/ThemeContext";
-import { useRouter } from "next/navigation";
 
 export default function Header() {
-  const { colors } = useTheme(); 
+  const { colors } = useTheme();
   const router = useRouter();
 
-
-  const handleNavigatePage = () => {
-    router.push("./projects")
-  }
-
   return (
-    <div
-      className="header-container"
+    <header
+      className="border-b-2 p-6 transition-colors duration-500"
       style={{
         backgroundColor: colors.background,
+        borderColor: colors.border,
         color: colors.text,
-        transition: "background-color 0.4s ease, color 0.4s ease",
       }}
     >
-      <ThemeButton />
+      <div className="flex justify-end">
+        <ThemeButton />
+      </div>
 
-      <section className="presentation">
-        <img src="/images/profil.png" alt="photo de profil" className="photo" />
-        <h1 className="name" style={{ color: colors.title }}>
+      <section className="flex flex-col items-center text-center my-12">
+        <img
+          src="/images/profil.png"
+          alt="photo de profil"
+          className="w-[150px] h-[150px] rounded-full mb-5"
+        />
+        <h1
+          className="text-4xl font-semibold mb-3"
+          style={{ color: colors.title }}
+        >
           Rachel Silencieux
         </h1>
-        <h2 className="function" style={{ color: colors.text }}>
+        <h2 className="text-lg" style={{ color: colors.text }}>
           Étudiante en informatique
         </h2>
       </section>
 
-      <section className="knowledge">
+      <section className="flex flex-wrap justify-center gap-4 mt-6">
         {[
           "React",
           "JavaScript",
@@ -49,13 +52,11 @@ export default function Header() {
         ].map((skill) => (
           <h3
             key={skill}
+            className="rounded-full px-4 py-2 text-sm md:text-base transition-colors duration-300 cursor-pointer"
             style={{
               backgroundColor: colors.card,
               color: colors.text,
-              border: colors.border,
-              borderRadius: "8px",
-              padding: "6px 10px",
-              transition: "backgroundColor 0.4s ease, color 0.4s ease",
+              border: `1px solid ${colors.border}`,
             }}
           >
             {skill}
@@ -64,17 +65,16 @@ export default function Header() {
       </section>
 
       <button
-        className="works-btn"
+        onClick={() => router.push("./projects")}
+        className="block mx-auto mt-10 px-6 py-3 text-lg font-semibold rounded-md transition-colors duration-300"
         style={{
           backgroundColor: colors.accent,
           color: colors.buttonText,
           border: `1px solid ${colors.border}`,
-          transition: "backgroundColor 0.4s ease, color 0.4s ease",
         }}
-        onClick={handleNavigatePage}
       >
         Voir mes travaux
       </button>
-    </div>
+    </header>
   );
 }
