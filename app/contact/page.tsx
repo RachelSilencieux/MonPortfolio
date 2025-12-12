@@ -20,23 +20,8 @@ export default function ContactPage(){
 
       const handleSubmit = async (e: any) => {
         e.preventDefault();
-
-        const response = await fetch("/api", {
-            method: "POST",
-            headers: {"Content-Type": "application/json"},
-            body: JSON.stringify(form)
-        })
-
-        const result = await response.json();
-
-        if (result.success){
-            alert("Message envoyé!")
-            // Mettre un pop-up pour "Message envoyé"
-        } else {
-            alert("OUPS! Le message n'a pas pu être envoyé")
-            // Mettre un pop-up pour "Message non envoyé"
-        }
       }
+
 
     return(
         <div
