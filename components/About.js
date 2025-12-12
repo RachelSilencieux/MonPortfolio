@@ -70,21 +70,23 @@ export default function About() {
               Contactez-moi
             </button>
 
-            <button
-              className="px-6 py-2 font-bold rounded-md transition duration-300"
-              style={{
-                backgroundColor: colors.accent,
-                color: colors.buttonText,
-              }}
-            >
-              Télécharger mon CV
-            </button>
+           <a href="/cv/Silencieux_Rachel_CV_officiel.pdf" download="Silencieux_Rachel_CV_officiel.pdf">
+              <button
+                className="px-6 py-2 font-bold rounded-md transition duration-300 cursor-pointer"
+                style={{
+                  backgroundColor: colors.accent,
+                  color: colors.buttonText,
+                }}
+              >
+                Télécharger mon CV
+              </button>
+            </a>   
           </div>
         </div>
 
         {/* Section Progression */}
         <section
-          className="flex-1 p-12 rounded-lg transition-colors duration-300"
+          className="flex-1 p-12 rounded-lg transition-colors duration-300 h-150"
           style={{
             backgroundColor: colors.card,
             border: `1px solid ${colors.border}`,

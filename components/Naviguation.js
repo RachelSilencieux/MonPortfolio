@@ -7,7 +7,7 @@ import { useTheme } from "../context/ThemeContext";
 
 export default function Naviguation() {
   const [showNav, setShowNav] = useState(false);
-  const { colors } = useTheme(); // pour thème clair/sombre
+  const { colors } = useTheme(); 
 
   const toggleNav = () => setShowNav(!showNav);
 

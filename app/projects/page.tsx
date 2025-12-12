@@ -8,7 +8,7 @@ export default function ProjectsPage() {
   const { colors } = useTheme();
 
   return (
-    <main
+    <div
       className="min-h-screen transition-colors duration-500 px-6 md:px-12 lg:px-20 py-12"
       style={{
         backgroundColor: colors.background2,
@@ -29,6 +29,6 @@ export default function ProjectsPage() {
           <ProjectCard key={index} project={p} />
         ))}
       </div>
-    </main>
+    </div>
   );
 }

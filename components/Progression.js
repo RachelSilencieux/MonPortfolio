@@ -24,10 +24,10 @@ export default function Progression() {
   return (
     <div className="progression-container">
       <section className="progression">
-        <h1 style={{ color: colors.title }}>Niveau de maîtrise des technologies</h1>
+        <h1 style={{ color: colors.title }} className="text-center text-3xl">Niveau de maîtrise des technologies</h1>
 
         {skills.map((skill, i) => (
-          <div key={i}>
+          <div key={i} className="mt-10">
             <p style={{ color: colors.title}}>{skill.name}</p>
             <div
               className="progress-bar"
@@ -36,7 +36,8 @@ export default function Progression() {
                 backgroundColor: getColor(skill.value),
                 borderRadius: "20px",
                 textAlign: "center",
-                color: "white"
+                color: "white",
+                marginBottom: "30px",
               }}
               role="progressbar"
               aria-valuenow={skill.value}

@@ -1,13 +1,12 @@
+"use client";
+
 import "./globals.css";
 import Footer from "@/components/Footer";
 import { ThemeProvider } from "@/context/ThemeContext";
 import { ReactNode } from "react";
 import Naviguation from "@/components/Naviguation"
 
-export const metadata = {
-    title: "Rachel Silencieux - Portfolio",
-    description: "Portfolio personnel de Rachel Silencieux, développeuse front-end.",
-}
+
 
 export default function RootLayout({ children }: { children: ReactNode}) {
     return(
