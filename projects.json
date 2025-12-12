@@ -1,0 +1,40 @@
+{
+  "projects": [
+    {
+      "title": "Un site d'hotel",
+      "image": ["/images/hotel.png", "/images/hotel1.png", "/images/hotel2.png"],
+      "description": "Création d'un site d'hotel en HTML/CSS avec des informations fautives.",
+      "link": ""
+    },
+    {
+      "title": "Mon premier portfolio",
+      "image": ["/images/firstPortfolio.png"],
+      "description": "Création de mon premier portfolio en simple HTML/CSS avec des informations fautives.",
+      "link": ""
+    },
+    {
+      "title": "Un générateur de mot de passe",
+      "image": ["/images/mdp.png"],
+      "description": "Création d'un générateur de mot de passe en JavaScript.",
+      "link": ""
+    },
+    {
+      "title": "Mon premier site complet",
+      "image": ["/images/firstweb.png", "/images/firstweb1.png", "/images/firstweb2.png"],
+      "description": "Création de mon premier site complet en HTML/CSS/JavaScript avec des informations correctes.",
+      "link": ""
+    },
+    {
+      "title": "Gestion d'une bibliothèque virtuelle",
+      "image": ["/images/VL_1.png", "/images/VL_2.png", "/images/VL_3.png"],
+      "description": "Travail d'équipe d'une application de bureau pour gérer les emprunts de livre avec la méthode CRUD en C#.",
+      "link": ""
+    },
+    {
+      "title": "Jeu Save Castle",
+      "image": ["/images/SaveCastle_1.png", "/images/SaveCastle_2.png", "/images/SaveCastle_3.png"],
+      "description": "Création d'un jeu en Unity/C# avec un héros qui doit franchir des obstacles pour sauver la princesse.",
+      "link": ""
+    }
+  ]
+}
