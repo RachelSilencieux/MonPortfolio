@@ -52,7 +52,7 @@ export default function Naviguation() {
           {[
             { label: "À propos", href: "/about" },
             { label: "Projets", href: "/projects" },
-            { label: "Contact", href: "/contact" },
+            { label: "Réflexion UX", href: "/reflexion" },
           ].map((link) => (
             <a
               key={link.href}

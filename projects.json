@@ -1,21 +1,21 @@
 {
   "projects": [
     {
-      "title": "Un site d'hotel",
+      "title": "SITE D'HÔTEL BON SÉJOUR",
       "image": ["/images/hotel.png", "/images/hotel1.png", "/images/hotel2.png"],
-      "description": "Création d'un site d'hotel en HTML/CSS avec des informations fautives.",
+      "description": "Site web d'hôtel fautif créé en HTML/CSS/JavaScript avec un design moderne et responsive.",
       "link": ""
     },
     {
-      "title": "Mon premier portfolio",
-      "image": ["/images/firstPortfolio.png"],
-      "description": "Création de mon premier portfolio en simple HTML/CSS avec des informations fautives.",
+      "title": "JEU 3D / TRAVAIL D'ÉQUIPE",
+      "image": ["/images/3DIMG.png", "/images/3DIMG1.png", "/images/3DIMG2.png"],
+      "description": "Jeu d'obstacles en 3D développé en Unity/C# dans le cadre d'un travail d'équipe.",
       "link": ""
     },
     {
-      "title": "Un générateur de mot de passe",
-      "image": ["/images/mdp.png"],
-      "description": "Création d'un générateur de mot de passe en JavaScript.",
+      "title": "PIXEL STREAM / TRAVAIL D'ÉQUIPE",
+      "image": ["/images/streamIMG.png", "/images/streamIMG1.png", "/images/streamIMG2.png"],
+      "description": "Application mobile, style Spotify, développée en React Native dans le cadre d'un travail d'équipe.",
       "link": ""
     },
     {
@@ -25,7 +25,7 @@
       "link": ""
     },
     {
-      "title": "Gestion d'une bibliothèque virtuelle",
+      "title": "BIBLIOTHÈQUE VIRTUELLE / TRAVAIL D'ÉQUIPE",
       "image": ["/images/VL_1.png", "/images/VL_2.png", "/images/VL_3.png"],
       "description": "Travail d'équipe d'une application de bureau pour gérer les emprunts de livre avec la méthode CRUD en C#.",
       "link": ""
