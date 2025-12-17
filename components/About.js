@@ -16,7 +16,7 @@ export default function About() {
     >
       <div className="flex flex-col lg:flex-row gap-10 items-start">
         {/* Texte principal */}
-        <div className="flex-[2]">
+        <div className="flex-2">
           <h1
             className="text-left ml-5 text-[2.5em] mb-5 underline font-semibold"
             style={{ color: colors.title }}
@@ -60,15 +60,6 @@ export default function About() {
 
           {/* Boutons */}
           <div className="mt-8 flex gap-4 pl-5">
-            <button
-              className="px-6 py-2 font-bold rounded-md transition duration-300"
-              style={{
-                backgroundColor: colors.accent,
-                color: colors.buttonText,
-              }}
-            >
-              Contactez-moi
-            </button>
 
            <a href="/cv/Silencieux_Rachel_CV_officiel.pdf" download="Silencieux_Rachel_CV_officiel.pdf">
               <button

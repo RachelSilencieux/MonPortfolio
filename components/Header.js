@@ -71,6 +71,7 @@ export default function Header() {
           backgroundColor: colors.accent,
           color: colors.buttonText,
           border: `1px solid ${colors.border}`,
+          cursor: "pointer",
         }}
       >
         Voir mes travaux

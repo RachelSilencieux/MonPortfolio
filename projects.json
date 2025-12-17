@@ -19,7 +19,7 @@
       "link": ""
     },
     {
-      "title": "Mon premier site complet",
+      "title": "PREMIER PORTFOLIO / DÉBUTANT",
       "image": ["/images/firstweb.png", "/images/firstweb1.png", "/images/firstweb2.png"],
       "description": "Création de mon premier site complet en HTML/CSS/JavaScript avec des informations correctes.",
       "link": ""
@@ -31,7 +31,7 @@
       "link": ""
     },
     {
-      "title": "Jeu Save Castle",
+      "title": "JEU 2D SAVE CASTLE",
       "image": ["/images/SaveCastle_1.png", "/images/SaveCastle_2.png", "/images/SaveCastle_3.png"],
       "description": "Création d'un jeu en Unity/C# avec un héros qui doit franchir des obstacles pour sauver la princesse.",
       "link": ""

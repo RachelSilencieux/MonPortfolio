@@ -4,11 +4,13 @@ import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { useTheme } from "../context/ThemeContext";
+import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 export default function Naviguation() {
   const [showNav, setShowNav] = useState(false);
   const { colors } = useTheme(); 
-
+  const router = useRouter();
   const toggleNav = () => setShowNav(!showNav);
 
   return (
@@ -20,14 +22,20 @@ export default function Naviguation() {
         transition: "background-color 0.3s ease, color 0.3s ease",
       }}
     >
-      {/* Barre principale */}
       <div className="flex justify-between items-center px-5 py-3">
         <h1
           className="text-xl font-bold"
           style={{
             color: colors.title,
             fontFamily: "Cambria, Cochin, Georgia, Times, 'Times New Roman', serif",
+            cursor: "pointer",
           }}
+          onClick={
+            (e) => {
+              e.preventDefault();
+              router.push("/");
+            }
+          }
         >
           Mon Portfolio
         </h1>
@@ -40,7 +48,6 @@ export default function Naviguation() {
         />
       </div>
 
-      {/* Liens du menu déroulant */}
       {showNav && (
         <nav
           className="absolute right-5 mt-2 flex flex-col bg-white border border-gray-200 rounded-lg px-6 py-4 shadow-lg"
@@ -50,11 +57,10 @@ export default function Naviguation() {
           }}
         >
           {[
-            { label: "À propos", href: "/about" },
             { label: "Projets", href: "/projects" },
             { label: "Réflexion UX", href: "/reflexion" },
           ].map((link) => (
-            <a
+            <Link
               key={link.href}
               href={link.href}
               className="py-2 text-base font-medium hover:font-semibold transition-colors duration-300"
@@ -63,7 +69,7 @@ export default function Naviguation() {
               }}
             >
               {link.label}
-            </a>
+            </Link>
           ))}
         </nav>
       )}

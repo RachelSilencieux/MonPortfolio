@@ -37,7 +37,7 @@ export default function ProjectCard({ project }) {
         <FontAwesomeIcon
           icon={faArrowLeft}
           onClick={handlePrevImage}
-          className="absolute top-1/2 left-3 -translate-y-1/2 text-white text-xl cursor-pointer hover:scale-110 transition"
+          className="absolute top-1/2 left-3 -translate-y-1/2 text-black text-3xl cursor-pointer hover:scale-110 transition"
         />
 
         <img
@@ -53,7 +53,7 @@ export default function ProjectCard({ project }) {
         <FontAwesomeIcon
           icon={faArrowRight}
           onClick={handleNextImage}
-          className="absolute top-1/2 right-3 -translate-y-1/2 text-white text-xl cursor-pointer hover:scale-110 transition"
+          className="absolute top-1/2 right-3 -translate-y-1/2 text-black text-3xl cursor-pointer hover:scale-110 transition"
         />
       </div>
 
